@@ -8,7 +8,7 @@
     "codespaces": {
       "repositories": {
         "tonyday/*": {
-          "permissions": "write-all"
+          "permissions": "read-all"
         }
       }
     }
