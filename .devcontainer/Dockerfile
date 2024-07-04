@@ -1,6 +1,6 @@
 FROM ruby:3
 
-ARG USERNAME=tonydev
+ARG USERNAME=devcontainer
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
@@ -25,5 +25,5 @@ USER $USERNAME
 
 RUN curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 
-# Keep the container alive for eva
-ENTRYPOINT ["tail", "-f", "/dev/null"]
+# Set `DEVCONTAINER` environment variable to help with orientation
+ENV DEVCONTAINER=true

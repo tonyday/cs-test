@@ -1,6 +1,6 @@
 // See https://containers.dev/implementors/json_reference/ for configuration reference
 {
-	"name": "Interview prep",
+	"name": "Codespace test",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
