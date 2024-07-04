@@ -1,8 +1,18 @@
 // See https://containers.dev/implementors/json_reference/ for configuration reference
 {
-	"name": "Codespace test",
-	"build": {
-		"dockerfile": "Dockerfile"
-	},
-  "remoteUser": "devcontainer"
+  "name": "Codespace test",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "codespaces": {
+      "repositories": {
+        "my_org/my_repo": {
+          "permissions": {
+            "issues": "write"
+          }
+        }
+      }
+    }
+  }
 }
