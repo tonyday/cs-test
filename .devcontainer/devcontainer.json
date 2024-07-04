@@ -7,7 +7,7 @@
   "customizations": {
     "codespaces": {
       "repositories": {
-        "tonyday/vudotfiles": {
+        "fatboy/alltoys": {
           "permissions": {
             "actions": "write",
             "checks": "write",
