@@ -9,9 +9,14 @@ RUN apt update && \
     apt install -y \
     less \
     man-db  \
+    postgresql  \
     sudo \
     vim \
     zsh
+
+RUN service postgresql start
+ENV DB_CMD="create user ${USERNAME} with createdb;"
+RUN su postgres -c 'psql -c ${DB_CMD}'
 
 RUN gem update --system
 
