@@ -13,6 +13,8 @@ RUN apt update && \
     vim \
     zsh
 
+RUN gem update --system
+
 # Set up unprivileged local user
 RUN groupadd --gid $USER_GID $USERNAME \
     && groupadd bundler \
